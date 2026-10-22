@@ -1,0 +1,16 @@
+[
+  {
+    "dataset": "digits",
+    "total_errors_selected_fusion": 67,
+    "baseline_correct_selected_wrong": 11,
+    "high_confidence_gt_0_8": 20,
+    "top_wrong_predictions": "[[3, 18], [9, 10], [8, 9], [2, 8], [1, 7]]"
+  },
+  {
+    "dataset": "officehome",
+    "total_errors_selected_fusion": 43,
+    "baseline_correct_selected_wrong": 34,
+    "high_confidence_gt_0_8": 2,
+    "top_wrong_predictions": "[[6, 5], [7, 3], [52, 3], [8, 3], [62, 3]]"
+  }
+]

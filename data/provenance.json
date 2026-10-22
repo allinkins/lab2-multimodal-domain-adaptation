@@ -1,0 +1,12 @@
+{
+  "officehome_source": "local lab1_officehome/data/manifest.json; original Office-Home source and license are documented in lab1_officehome/README.md",
+  "officehome_manifest_sha256": "20510129078077c21168e39af7a0504a0c70c297f753cd23fbc6af622a441804",
+  "apple_vision_labels_sha256": "67f0f3eb7b70fd16797fdb8c2cfd3793d95cb96f74b2a98bb0a16f31d5de20f8",
+  "siglip2_model_id": "google/siglip2-base-patch16-224",
+  "siglip2_revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+  "siglip2_model_safetensors_sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+  "officehome_features_sha256": "cab108798fc7a259599db8a1ffe4182613773d07438508739e3f7f34f41eedb8",
+  "digits_features_sha256": "b81d1c8b27e190a596a93a845bd5009e1703acf6a86184ca0aa9694f6b75d0d7",
+  "protocol_sha256_before_training": "b8060a496f1508c32c994f4f2d1a176617b59c99c9cf0840fafb3f63618643c6",
+  "note": "The Office-Home target split was analyzed in an earlier laboratory version; current outcomes remain exploratory. No temporal observations exist in either dataset."
+}

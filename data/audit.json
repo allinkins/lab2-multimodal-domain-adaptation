@@ -1,0 +1,124 @@
+{
+  "officehome": {
+    "n": 1235,
+    "class_count": 65,
+    "domains": {
+      "Product": 650,
+      "Clipart": 325,
+      "Art": 130,
+      "Real_World": 130
+    },
+    "splits": {
+      "source_train": {
+        "n": 520,
+        "class_count": 65,
+        "min_per_class": 8,
+        "max_per_class": 8
+      },
+      "validation": {
+        "n": 130,
+        "class_count": 65,
+        "min_per_class": 2,
+        "max_per_class": 2
+      },
+      "target_adapt": {
+        "n": 195,
+        "class_count": 65,
+        "min_per_class": 3,
+        "max_per_class": 3
+      },
+      "test": {
+        "n": 130,
+        "class_count": 65,
+        "min_per_class": 2,
+        "max_per_class": 2
+      },
+      "new_slice": {
+        "n": 130,
+        "class_count": 65,
+        "min_per_class": 2,
+        "max_per_class": 2
+      },
+      "external": {
+        "n": 130,
+        "class_count": 65,
+        "min_per_class": 2,
+        "max_per_class": 2
+      }
+    },
+    "missing_text": 0,
+    "unique_texts": 1175,
+    "nonfinite_visual": 0,
+    "nonfinite_text_embeddings": 0,
+    "nonfinite_numeric": 0,
+    "cross_split_groups": 0,
+    "numeric_shape": [
+      1235,
+      19
+    ],
+    "visual_shape": [
+      1235,
+      768
+    ],
+    "text_embedding_shape": [
+      1235,
+      768
+    ],
+    "mean_text_words": 6.706072874493927
+  },
+  "digits": {
+    "n": 1797,
+    "class_count": 10,
+    "domains": {
+      "inverted_tinted": 809,
+      "original": 988
+    },
+    "splits": {
+      "test": {
+        "n": 405,
+        "class_count": 10,
+        "min_per_class": 39,
+        "max_per_class": 41
+      },
+      "source_train": {
+        "n": 790,
+        "class_count": 10,
+        "min_per_class": 77,
+        "max_per_class": 81
+      },
+      "target_adapt": {
+        "n": 404,
+        "class_count": 10,
+        "min_per_class": 39,
+        "max_per_class": 41
+      },
+      "validation": {
+        "n": 198,
+        "class_count": 10,
+        "min_per_class": 19,
+        "max_per_class": 20
+      }
+    },
+    "missing_text": 0,
+    "unique_texts": 45,
+    "nonfinite_visual": 0,
+    "nonfinite_text_embeddings": 0,
+    "nonfinite_numeric": 0,
+    "cross_split_groups": 0,
+    "numeric_shape": [
+      1797,
+      19
+    ],
+    "visual_shape": [
+      1797,
+      768
+    ],
+    "text_embedding_shape": [
+      1797,
+      768
+    ],
+    "mean_text_words": 9.0,
+    "exact_duplicate_groups": 0,
+    "cross_split_exact_duplicates": 0
+  }
+}

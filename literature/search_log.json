@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-22",
+  "method": "targeted review of primary publisher pages, original papers and model documentation",
+  "queries": [
+    "Office-Home unsupervised domain adaptation MMD CORAL",
+    "vision-language model domain adaptation prototypes",
+    "SigLIP 2 image text encoder zero-shot transfer",
+    "text table and text time series multimodal fusion",
+    "financial multimodal language model"
+  ],
+  "included": 15,
+  "scope": "curated review, not a systematic search",
+  "search_hit_total": null,
+  "selection_rule": "original works directly relevant to domain adaptation, vision-language representation, structured-input fusion or the assignment's financial example"
+}

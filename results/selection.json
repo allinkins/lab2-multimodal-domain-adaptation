@@ -1,0 +1,48 @@
+{
+  "officehome": {
+    "fusion_scheme": "concat_mmd",
+    "unimodal_scheme": "zero_shot",
+    "source_validation_mean_macro_f1": {
+      "concat": 0.9753846153846154,
+      "concat_coral": 0.9835897435897435,
+      "concat_mmd": 0.9835897435897435,
+      "gated": 0.9688888888888889,
+      "gated_coral": 0.9702564102564102,
+      "mean": 0.9606837606837607,
+      "mean_coral": 0.9622222222222222,
+      "mean_mmd": 0.96,
+      "numeric": 0.121058941058941,
+      "text": 0.6126658526658527,
+      "visual": 0.9810256410256412,
+      "visual_coral": 0.9837606837606838,
+      "visual_mmd": 0.9837606837606838,
+      "zero_shot": 0.9835897435897436
+    },
+    "rule": "highest mean source validation Macro-F1 across 3 seeds among 8 fusion schemes; earliest listed scheme on ties",
+    "test_consulted_for_current_model_choice": false,
+    "evaluation_status": "exploratory: the Office-Home target split was already inspected in a previous laboratory version"
+  },
+  "digits": {
+    "fusion_scheme": "mean_mmd",
+    "unimodal_scheme": "visual",
+    "source_validation_mean_macro_f1": {
+      "concat": 0.9602384113295539,
+      "concat_coral": 0.9600819800177952,
+      "concat_mmd": 0.9584715777522596,
+      "gated": 0.9689830677635555,
+      "gated_coral": 0.970505304285792,
+      "mean": 0.9723229930547004,
+      "mean_coral": 0.9724100138734285,
+      "mean_mmd": 0.9724100138734285,
+      "numeric": 0.38616702113927115,
+      "text": 0.3890589912843207,
+      "visual": 0.9533865133736765,
+      "visual_coral": 0.9584185837716005,
+      "visual_mmd": 0.9516083954851605,
+      "zero_shot": 0.6037365351392048
+    },
+    "rule": "highest mean source validation Macro-F1 across 3 seeds among 8 fusion schemes; earliest listed scheme on ties",
+    "test_consulted_for_current_model_choice": false,
+    "evaluation_status": "exploratory: the Office-Home target split was already inspected in a previous laboratory version"
+  }
+}

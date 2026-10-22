@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.0",
+  "primary_key": ["dataset", "id"],
+  "splits": ["source_train", "validation", "target_adapt", "test", "new_slice", "external"],
+  "fields": {
+    "dataset": "officehome or digits",
+    "id": "stable original object identifier",
+    "domain": "source or target visual domain",
+    "split": "exclusive object-level membership",
+    "label": "ground truth: source_train and validation only for fitting/selection; target labels only for final evaluation",
+    "text": "class-free automatic description of the same image",
+    "visual": "frozen SigLIP 2 image embedding",
+    "text_embedding": "frozen SigLIP 2 encoding of text field",
+    "numeric": "19 direct color, brightness, contrast, edge and geometry statistics of one image"
+  },
+  "join_rule": "exact dataset and id equality; no nearest-time join",
+  "time_rule": "none: Office-Home and Digits contain no repeated time-stamped observations",
+  "leakage_rule": "target_adapt, test, new_slice and external ground-truth labels excluded from normalization, fitting, checkpoint and scheme selection",
+  "missing_policy": "reject absent image or text for extraction; evaluate missing-modality masks on a fitted fusion head",
+  "integrity": "feature id order equals row id order; groups do not intersect splits"
+}
