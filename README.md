@@ -22,6 +22,8 @@
 
 Нужны Python 3.12 и изображения предыдущей лабораторной в соседнем каталоге `../lab1_officehome/data/images/` вместе с `../lab1_officehome/data/manifest.json`. Строки с автоматическими метками Apple Vision уже сохранены в `data/officehome_rows.json` и `data/officehome_vision_labels.jsonl`. Для анализа готовых результатов загрузка исходных изображений и SigLIP 2 не нужна. Для **полного пересчёта признаков** требуется официальный checkpoint модели; его веса не входят в проект.
 
+Метки Apple Vision были получены на macOS отдельным запросом `VNClassifyImageRequest` из `src/apple_vision_labels.swift`. Скрипт записывает до восьми категорий и их оценки уверенности для каждого изображения. `src/prepare_vision_text.py` берёт первые шесть названий категорий, соединяет их в строку и связывает с объектом по `id`; оценки уверенности в текстовую строку не входят. Для получения **новых** меток на macOS выполните `swift src/apple_vision_labels.swift ../lab1_officehome/data/manifest.json ../lab1_officehome > data/officehome_vision_labels.jsonl`, затем `python src/prepare_vision_text.py`. Системная версия Vision может измениться, поэтому для точного повторения опубликованных результатов используйте сохранённый JSONL.
+
 ```bash
 cd /Users/alina/Desktop/ВКР/lab2_multimodal
 python3.12 -m venv .venv
